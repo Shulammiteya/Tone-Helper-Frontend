@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ToneHelper",
+    "name": "Tone Helper",
     "slug": "ToneHelper",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,9 +17,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.shulammite.tonehelper",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app uses the microphone to record any audio and then the user can tune the audio."
+      }
     },
     "android": {
+      "package": "com.shulammite.tonehelper",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
