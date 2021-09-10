@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Alert, StyleSheet, View } from 'react-native';
 import {
   Avatar,
   Divider,
@@ -40,7 +40,7 @@ export const HomeDrawer = ({ navigation }): DrawerElement => {
       }
     }
     catch {
-      alert("網路連線錯誤或伺服器忙碌");
+      Alert.alert("網路連線錯誤或伺服器忙碌");
     }
   }
 
