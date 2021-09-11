@@ -3,10 +3,10 @@
 export class AppInfoService {
 
   static getVersion = (): string => {
-    return '1.0.0';//DeviceInfo.getVersion();
+    return '4.0.1';//DeviceInfo.getVersion();
   };
 
   static getBuildNumber = (): string => {
-    return '1.0.0';//DeviceInfo.getBuildNumber();
+    return '4.0.1';//DeviceInfo.getBuildNumber();
   };
 }

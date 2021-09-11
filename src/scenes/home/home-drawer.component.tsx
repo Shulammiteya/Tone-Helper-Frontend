@@ -73,12 +73,12 @@ export const HomeDrawer = ({ navigation }): DrawerElement => {
     <SafeAreaLayout insets='top' level='2'>
       <Layout style={styles.header} level='2'>
         <View style={styles.profileContainer}>
-          {/*
+          {
           <Avatar
             size='giant'
             source={require('../../../assets/icon.png')}
           />
-          */}
+          }
           <Text style={styles.profileName} category='h6'>
             {languageContext.isChinese()? '百萬調音師' : 'Tone Helper'}
           </Text>

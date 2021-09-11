@@ -20,8 +20,8 @@ export const CompositionsTopBarNavigator = ({ navigation, state }) => {
       <BrandTabBar
         selectedIndex={state.index}
         onSelect={onTabSelect}>
-        <Tab style={styles.topBar} /*title={languageContext.isChinese()? '錄音' : 'Recording'}*/ />
-        <Tab style={styles.topBar} /*title={languageContext.isChinese()? '調音' : 'Tuning'}*/ />
+        <Tab style={styles.topBar} title={languageContext.isChinese()? '錄音' : 'Recording'} />
+        <Tab style={styles.topBar} title={languageContext.isChinese()? '調音' : 'Tuning'} />
       </BrandTabBar>
     </SafeAreaLayout>
   );

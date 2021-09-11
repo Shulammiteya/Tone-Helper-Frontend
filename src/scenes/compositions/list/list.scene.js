@@ -75,7 +75,7 @@ export const ListScreen = ({ navigation }) => {
           <Text category="h6" style={styles.noPermissionsText}>
             No audio
           </Text>
-          <Text /*appearance='hint'*/ style={styles.noPermissionsText}>
+          <Text appearance='hint' style={styles.noPermissionsText}>
             尚未有歌曲
           </Text>
         </Card>

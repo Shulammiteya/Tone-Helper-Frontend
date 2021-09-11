@@ -178,7 +178,7 @@ export const RepertoireScreen = ({ navigation }) => {
           lightTheme={!themeContext.isDarkMode()}
           containerStyle={styles.searchBar}
           inputContainerStyle={{backgroundColor: themeContext.isDarkMode()? '#222222' : '#EFEFEF'}}
-          //placeholder={languageContext.isChinese()? '搜尋' : 'Search'}
+          placeholder={languageContext.isChinese()? '搜尋' : 'Search'}
           onChangeText={filterHandler}
           value={searchQuery}
         />
@@ -207,7 +207,7 @@ export const RepertoireScreen = ({ navigation }) => {
                 <Text category="h6" style={styles.noPermissionsText}>
                   No audio.
                 </Text>
-                <Text /*appearance='hint'*/ style={styles.noPermissionsText}>
+                <Text appearance='hint' style={styles.noPermissionsText}>
                   尚未有歌曲
                 </Text>
               </Card>

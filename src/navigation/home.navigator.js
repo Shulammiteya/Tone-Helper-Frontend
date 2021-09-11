@@ -42,8 +42,8 @@ const HomeTabsNavigator = () => (
 export const HomeNavigator = () => (
   <Drawer.Navigator
     screenOptions={{ gestureEnabled: true }}
-    drawerType='back'
-    drawerStyle={{width: DEVICE_WIDTH}}
+    drawerType='front'
+    //drawerStyle={{width: DEVICE_WIDTH}}
     drawerContent={props => <HomeDrawer {...props}/>}
   >
     <Drawer.Screen name='Home' component={HomeTabsNavigator}/>
