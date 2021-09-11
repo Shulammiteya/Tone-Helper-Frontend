@@ -22,15 +22,15 @@ export const HomeBottomNavigation = (props): React.ReactElement => {
         selectedIndex={props.state.index}
         onSelect={onSelect}>
         <BottomNavigationTab
-          title={languageContext.isChinese()? '創作' : 'Compositions'}
+          //title={languageContext.isChinese()? '創作' : 'Compositions'}
           icon={CompositionsIcon}
         />
         <BottomNavigationTab
-          title={languageContext.isChinese()? '曲庫' : 'Repertoire'}
+          //title={languageContext.isChinese()? '曲庫' : 'Repertoire'}
           icon={RepertoireIcon}
         />
         <BottomNavigationTab
-          title={languageContext.isChinese()? '設定' : 'Settings'}
+          //title={languageContext.isChinese()? '設定' : 'Settings'}
           icon={SettingsIcon}
         />
       </BrandBottomNavigation>

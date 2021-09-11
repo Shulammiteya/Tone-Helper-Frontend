@@ -321,7 +321,7 @@ export default class RecordingScreen extends React.Component {
   render() {
 
     const themeContext = this.context;
-    const backgroundColor = themeContext.isDarkMode()? '#5577aa' : '#aaccff';
+    const backgroundColor = themeContext.isDarkMode()? '#5577aa' : '#4466ff';
 
     if(!this.state.haveRecordingPermissions) {
       return (
@@ -375,7 +375,7 @@ export default class RecordingScreen extends React.Component {
                   disabled={this.state.isLoading}
                 /> )
             }
-            <Text style={ {opacity: this.state.isRecording ? DISABLED_OPACITY : 0} }>
+            <Text style={ {opacity: this.state.isRecording ? 1 /*DISABLED_OPACITY*/ : 0} }>
               {this._getRecordingTimestamp()}
             </Text>
           </View>
@@ -414,7 +414,7 @@ export default class RecordingScreen extends React.Component {
                   type="font-awesome"
                   color={backgroundColor}
                   onPress={this._onMutePressed}
-                  disabled={!this.state.isPlaybackAllowed || this.state.isLoading}
+                  //disabled={!this.state.isPlaybackAllowed || this.state.isLoading}
               />
               <Slider
                 style={styles.volumeSlider}
@@ -433,7 +433,7 @@ export default class RecordingScreen extends React.Component {
                 color={backgroundColor}
                 size={35}
                 onPress={this._onPlayPausePressed}
-                disabled={!this.state.isPlaybackAllowed || this.state.isLoading}
+                //disabled={!this.state.isPlaybackAllowed || this.state.isLoading}
               />
               <Icon
                 raised={!themeContext.isDarkMode()}
@@ -442,7 +442,7 @@ export default class RecordingScreen extends React.Component {
                 type="font-awesome"
                 color={backgroundColor}
                 onPress={this._onStopPressed}
-                disabled={!this.state.isPlaybackAllowed || this.state.isLoading}
+                //disabled={!this.state.isPlaybackAllowed || this.state.isLoading}
               />
             </View>
           </View>

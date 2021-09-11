@@ -73,10 +73,12 @@ export const HomeDrawer = ({ navigation }): DrawerElement => {
     <SafeAreaLayout insets='top' level='2'>
       <Layout style={styles.header} level='2'>
         <View style={styles.profileContainer}>
+          {/*
           <Avatar
             size='giant'
             source={require('../../../assets/icon.png')}
           />
+          */}
           <Text style={styles.profileName} category='h6'>
             {languageContext.isChinese()? '百萬調音師' : 'Tone Helper'}
           </Text>
@@ -104,7 +106,7 @@ export const HomeDrawer = ({ navigation }): DrawerElement => {
     <Drawer
       header={renderHeader}
       footer={renderFooter}
-      selectedIndex={selectedIndex}
+      //selectedIndex={selectedIndex}
       onSelect={(index) => setSelectedIndex(index)}
     >
       {DATA.map((el, index) => (
