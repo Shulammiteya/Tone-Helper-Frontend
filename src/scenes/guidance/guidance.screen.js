@@ -5,11 +5,13 @@ import { ImageOverlay } from './image-overlay.component';
 import { Theming } from '../../services/theme.service';
 import { SafeAreaLayout } from '../../components/safe-area-layout.component';
 import { ArrowIosBackIcon } from '../../components/icons';
+import { ThemeContext } from 'react-native-elements';
 
 const { width: DEVICE_WIDTH, height: DEVICE_HEIGHT } = Dimensions.get("window");
 
 export default GuidanceScreen = ({navigation}) => {
 
+  const themeContext = React.useContext(Theming.ThemeContext);
   const languageContext = React.useContext(Theming.LanguageContext);
 
   const renderGoBackAction = () => (
@@ -52,6 +54,7 @@ export default GuidanceScreen = ({navigation}) => {
             </Text>
             <Text
               style={styles.stepDiscription}
+              //style={themeContext.isDarkMode()? styles.stepDiscriptionDarkMode : styles.stepDiscription}
               appearance='hint'
               category='p2'>
               {
@@ -67,6 +70,7 @@ export default GuidanceScreen = ({navigation}) => {
             </Text>
             <Text
               style={styles.stepDiscription}
+              //style={themeContext.isDarkMode()? styles.stepDiscriptionDarkMode : styles.stepDiscription}
               appearance='hint'
               category='p2'>
               {
@@ -82,6 +86,7 @@ export default GuidanceScreen = ({navigation}) => {
             </Text>
             <Text
               style={styles.stepDiscription}
+              //style={themeContext.isDarkMode()? styles.stepDiscriptionDarkMode : styles.stepDiscription}
               appearance='hint'
               category='p2'>
               {
@@ -96,7 +101,8 @@ export default GuidanceScreen = ({navigation}) => {
               {languageContext.isChinese()? '分享' : 'Share'}
             </Text>
             <Text
-              style={styles.stepDiscription}
+            style={styles.stepDiscription}
+            //style={themeContext.isDarkMode()? styles.stepDiscriptionDarkMode : styles.stepDiscription}
               appearance='hint'
               category='p2'>
               {
@@ -113,11 +119,12 @@ export default GuidanceScreen = ({navigation}) => {
           </Text>
           <Text
             style={styles.aboutDescription}
+            //style={themeContext.isDarkMode()? styles.aboutDescriptionDarkMode : styles.aboutDescription}
             appearance='hint'>
             {
               languageContext.isChinese()
-              ? '基於語音合成技術之iOS與Android作業系統的手機調音應用程式'
-              : 'A mobile tuning application for iOS and Android operating systems based on speech syhthesis technology.'
+              ? '基於語音合成技術之Android與iOS作業系統的手機調音應用程式'
+              : 'A mobile tuning application for Android and iOS operating systems based on speech syhthesis technology.'
             }
           </Text>
         </Layout>
@@ -134,10 +141,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   image: {
-    height: 360,
+    height: 200,
   },
   bookingCard: {
-    marginTop: -80,
+    marginTop: -60,
     margin: DEVICE_WIDTH / 20,
   },
   title: {
@@ -149,12 +156,21 @@ const styles = StyleSheet.create({
   },
   stepDiscription: {
     marginTop: DEVICE_HEIGHT / 60,
+    //color: '#5F6B83'
+  },
+  stepDiscriptionDarkMode: {
+    marginTop: DEVICE_HEIGHT / 60,
   },
   aboutLabel: {
     marginHorizontal: DEVICE_WIDTH / 10,
     marginVertical: DEVICE_HEIGHT / 50,
   },
   aboutDescription: {
+    marginHorizontal: DEVICE_WIDTH / 10,
+    marginBottom: DEVICE_HEIGHT / 12,
+    //color: '#5F6B83'
+  },
+  aboutDescriptionDarkMode: {
     marginHorizontal: DEVICE_WIDTH / 10,
     marginBottom: DEVICE_HEIGHT / 12,
   },

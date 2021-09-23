@@ -42,7 +42,7 @@ export const RepertoireScreen = ({ navigation }) => {
   
   const { finishedData } = useSelector(state => state.dataReducer);
   const [playingDataUri, setPlayingDataUri] = React.useState('');
-  const [searchQuery, setSearchQuery] = React.useState();
+  const [searchQuery, setSearchQuery] = React.useState('');
   const dispatch = useDispatch();
 
   let row = [];
@@ -52,9 +52,7 @@ export const RepertoireScreen = ({ navigation }) => {
     <TopNavigationAction
       icon={DrawerIcon}
       onPress={navigation.toggleDrawer}
-      onPressIn={() => {searchRef.current.blur()
-        console.log(eva)
-      }}
+      onPressIn={() => {searchRef.current.blur()}}
     />
   );
 

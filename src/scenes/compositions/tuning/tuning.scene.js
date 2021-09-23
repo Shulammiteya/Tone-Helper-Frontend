@@ -383,7 +383,7 @@ export default class TuningScreen extends React.Component {
     for(let i = start; i < end; i++) {
       this.f0Array[i] = f0;
     }
-    console.log(f0)
+    //console.log(f0)
   }
 
   startTune = async () => {

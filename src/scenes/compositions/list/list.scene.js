@@ -73,7 +73,7 @@ export const ListScreen = ({ navigation }) => {
       <ScrollView showsVerticalScrollIndicator={false}>
         <Card style={styles.noPermissionsCard}>
           <Text category="h6" style={styles.noPermissionsText}>
-            No audio.
+            No audio
           </Text>
           <Text appearance='hint' style={styles.noPermissionsText}>
             尚未有歌曲

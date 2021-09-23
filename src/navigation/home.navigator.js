@@ -1,4 +1,5 @@
 import React from 'react';
+import { Dimensions,} from "react-native";
 import { getFocusedRouteNameFromRoute } from '@react-navigation/core';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -9,6 +10,8 @@ import GuidanceScreen from '../scenes/guidance/guidance.screen';
 import { CompositionsNavigator } from './compositions.navigator'
 import { RepertoireNavigator } from './repertoire.navigator'
 import { SettingsNavigator } from './settings.navigator';
+
+const { width: DEVICE_WIDTH, height: DEVICE_HEIGHT } = Dimensions.get("window");
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -39,6 +42,8 @@ const HomeTabsNavigator = () => (
 export const HomeNavigator = () => (
   <Drawer.Navigator
     screenOptions={{ gestureEnabled: true }}
+    drawerType='front'
+    //drawerStyle={{width: DEVICE_WIDTH}}
     drawerContent={props => <HomeDrawer {...props}/>}
   >
     <Drawer.Screen name='Home' component={HomeTabsNavigator}/>
