@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Shulammiteya/Tone-Helper-Frontend">
-    <img src="https://drive.google.com/file/d/1AQ0-e869kWLbsq3zFLe61IvGrQvTrFPW/view?usp=sharing" alt="Logo" width="80" height="80">
+    <img src="https://drive.google.com/uc?export=view&id=1AQ0-e869kWLbsq3zFLe61IvGrQvTrFPW" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Tone Helper</h3>
@@ -105,19 +105,19 @@ Install the Expo client app on your iOS or Android phone and connect to the same
 Complete usage example.
 
 <p align="center">
-<img src="https://drive.google.com/file/d/12w0sdlDWN2v2ZJgbhQH7sKucRxIV-g25/view?usp=sharing" alt="Complete usage example." width="375px" height=640px>
+<img src="https://drive.google.com/uc?export=view&id=12w0sdlDWN2v2ZJgbhQH7sKucRxIV-g25" alt="Complete usage example." width="310px" height=620px>
 </p>
 
 Simply record a short audio and save it as a file.
 
 <p align="center">
-<img src="https://drive.google.com/file/d/1OL7xp9V1Z4sLiqrME4nt1OnOPHsgM-k_/view?usp=sharing" alt="Record a short audio and save it." width="375px" height=640px>
+<img src="https://drive.google.com/uc?export=view&id=1OL7xp9V1Z4sLiqrME4nt1OnOPHsgM-k_" alt="Record a short audio and save it." width="250px" height=500px>
 </p>
 
 Adjust the pitch and start synthesis.
 
 <p align="center">
-<img src="https://drive.google.com/file/d/1Yrmj72zZ56DQoIo_diBJYIIg1zNQgqbP/view?usp=sharing" alt="Adjust the pitch and start synthesis." width="375px" height=640px>
+<img src="https://drive.google.com/uc?export=view&id=1Yrmj72zZ56DQoIo_diBJYIIg1zNQgqbP" alt="Adjust the pitch and start synthesis." width="250px" height=500px>
 </p>
 <br />
 
