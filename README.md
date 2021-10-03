@@ -104,8 +104,10 @@ Install the Expo client app on your iOS or Android phone and connect to the same
 
 Complete usage example.
 
-<p float="center" align="center">
+<p align="center">
 <img src="https://drive.google.com/uc?export=view&id=12w0sdlDWN2v2ZJgbhQH7sKucRxIV-g25" alt="Record & tune." width="310px" height=620px>
+</p>
+<p align="center">
 <img src="https://drive.google.com/uc?export=view&id=1dxp9k-Zq7X6ob52nzlsEupmzFmcLXVWY" alt="File operation and system settings." width="310px" height=620px>
 </p>
 
